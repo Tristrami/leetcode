@@ -1,7 +1,7 @@
 package problems.top100.括号生成;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 // 22. 括号生成
 // https://leetcode.cn/problems/generate-parentheses/
@@ -9,9 +9,10 @@ public class GenerateParentheses
 {
     public static void main(String[] args)
     {
-        System.out.println(generateParenthesis(2));
+        System.out.println(generateParenthesis(6));
     }
 
+    // 递归，枚举出所有括号的组合，筛选出长度为 n * 2 并且合法的括号的组合，垃圾方法
     public static List<String> generateParenthesis(int n)
     {
         // ( ( ) )
@@ -27,8 +28,10 @@ public class GenerateParentheses
         // 生成所有括号组合
         search(s, combinations, combination, v, n);
         // TODO 筛选出合法的括号组合
-
-        return combinations;
+        Set<String> set = new HashSet<String>(){{
+            this.addAll(combinations);
+        }};
+        return new ArrayList<>(set);
     }
 
     public static void search(String s, List<String> combinations, StringBuilder combination, boolean[] v, int n)
