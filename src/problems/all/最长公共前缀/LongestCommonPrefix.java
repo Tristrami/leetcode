@@ -1,4 +1,4 @@
-package problems.common.最长公共前缀;
+package problems.all.最长公共前缀;
 
 // 14. 最长公共前缀
 // https://leetcode.cn/problems/longest-common-prefix/

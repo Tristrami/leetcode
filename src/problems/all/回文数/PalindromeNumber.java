@@ -1,6 +1,6 @@
-package problems.common.回文数;
+package problems.all.回文数;
 
-// 9. problems.common.回文数
+// 9. problems.all.回文数
 // https://leetcode.cn/problems/palindrome-number/
 public class PalindromeNumber
 {

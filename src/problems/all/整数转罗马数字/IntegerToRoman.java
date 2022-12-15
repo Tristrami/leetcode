@@ -1,4 +1,4 @@
-package problems.common.整数转罗马数字;
+package problems.all.整数转罗马数字;
 
 // 12. 整数转罗马数字
 // https://leetcode.cn/problems/integer-to-roman/

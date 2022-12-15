@@ -1,4 +1,4 @@
-package problems.common.Z字形变换;
+package problems.all.Z字形变换;
 
 // 6. Z 字形变换
 // https://leetcode.cn/problems/zigzag-conversion/

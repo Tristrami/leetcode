@@ -1,4 +1,4 @@
-package problems.common.罗马数字转整数;
+package problems.all.罗马数字转整数;
 
 import java.util.HashMap;
 import java.util.Map;

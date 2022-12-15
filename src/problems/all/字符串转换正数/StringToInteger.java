@@ -1,4 +1,4 @@
-package problems.common.字符串转换正数;
+package problems.all.字符串转换正数;
 
 // 8. 字符串转换整数 (atoi)
 // https://leetcode.cn/problems/string-to-integer-atoi/

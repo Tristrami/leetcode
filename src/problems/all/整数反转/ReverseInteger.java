@@ -1,6 +1,6 @@
-package problems.common.整数反转;
+package problems.all.整数反转;
 
-// 7. problems.common.整数反转
+// 7. problems.all.整数反转
 // https://leetcode.cn/problems/reverse-integer/
 public class ReverseInteger
 {

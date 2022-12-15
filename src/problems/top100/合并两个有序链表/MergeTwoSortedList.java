@@ -1,5 +1,7 @@
 package problems.top100.合并两个有序链表;
 
+import common.ListNode;
+
 // 21. 合并两个有序链表
 // https://leetcode.cn/problems/merge-two-sorted-lists/
 public class MergeTwoSortedList
@@ -38,13 +40,4 @@ public class MergeTwoSortedList
         }
         return dummyHead.next;
     }
-}
-
-class ListNode
-{
-    int val;
-    ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }

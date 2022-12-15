@@ -1,5 +1,7 @@
 package problems.top100.删除链表的倒数第N个结点;
 
+import common.ListNode;
+
 // 19. 删除链表的倒数第N个结点
 // https://leetcode.cn/problems/remove-nth-node-from-end-of-list/
 public class RemoveNthNodeFromEndOfList
@@ -29,13 +31,4 @@ public class RemoveNthNodeFromEndOfList
         // 不能直接返回 head，因为当 head 链表中只有一个元素时，执行上面的删除操作后 head 不为 null
         return dummyHead.next;
     }
-}
-
-class ListNode
-{
-    int val;
-    ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }

@@ -1,4 +1,4 @@
-package problems.common.三数之和;
+package problems.all.三数之和;
 
 import java.util.*;
 

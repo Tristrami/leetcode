@@ -1,4 +1,4 @@
-package problems.common.字符串转换正数;
+package problems.all.字符串转换正数;
 
 import java.util.HashMap;
 

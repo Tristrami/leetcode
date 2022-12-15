@@ -1,5 +1,7 @@
 package problems.top100.两数相加;
 
+import common.ListNode;
+
 import java.util.*;
 
 // 2. problems.top100.两数相加
@@ -7,9 +9,9 @@ class AddTwoNumbers
 {
     public static void main(String[] args)
     {
-        ListNode l1 = createList(new int[]{ 9,9,9,9,9,9,9 });
-        ListNode l2 = createList(new int[]{ 9,9,9,9 });
-        System.out.println(toArrayList(addTwoNumbers(l1, l2)));
+        ListNode l1 = ListNode.createList(new int[]{ 9,9,9,9,9,9,9 });
+        ListNode l2 = ListNode.createList(new int[]{ 9,9,9,9 });
+        System.out.println(ListNode.toArrayList(addTwoNumbers(l1, l2)));
     }
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2)
@@ -78,36 +80,4 @@ class AddTwoNumbers
         }
         return tail;
     }
-
-    public static ListNode createList(int[] values)
-    {
-        ListNode head = new ListNode();
-        ListNode tail = head;
-        for (int value : values) {
-            ListNode node = new ListNode(value, null);
-            tail.next = node;
-            tail = node;
-        }
-        return head.next;
-    }
-
-    public static List<Integer> toArrayList(ListNode list)
-    {
-        List<Integer> result = new ArrayList<>();
-        ListNode p = list;
-        while(p != null) {
-            result.add(p.val);
-            p = p.next;
-        }
-        return result;
-    }
-}
-
-class ListNode
-{
-    int val;
-    ListNode next;
-    ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
