@@ -8,7 +8,7 @@ public class GenerateParentheses3
 {
     public static void main(String[] args)
     {
-        System.out.println(generateParenthesis(8));
+        System.out.println(generateParenthesis(10));
     }
 
     // 树形深搜

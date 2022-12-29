@@ -12,7 +12,7 @@ public class ContainerWithMostWater
     // 双指针法
     public static int maxArea(int[] height)
     {
-        // area = abs(x2 - x1 + 1) * min(h[1], h[2])
+        // area = abs(x2 - x1) * min(h[1], h[2])
         if (height == null || height.length == 0) {
             return 0;
         }
