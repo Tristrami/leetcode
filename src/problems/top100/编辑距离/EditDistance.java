@@ -40,10 +40,14 @@ public class EditDistance
                 if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
                     dp[i][j] = dp[i - 1][j - 1];
                 } else {
-                    int swap = dp[i - 1][j - 1] + 1;
+                    // 对于不同的操作，子问题的状态不同，如果选择替换当前字符，那么子问题就需要去掉 word1[i] 和 word2[j]，
+                    // 因为将替换后 word1[i] = word2[j]；如果选择插入新的字符，这里并不需要真的去插入新字符，插入后 word1
+                    // 中新的字符和 word2[j] 相等，所以子问题 word2 需要去掉 word2[j]，而 word1 不变；如果选择删除当前
+                    // 字符，那么子问题 word1 中需要去掉 word1[i]，而 word2 不变
+                    int replace = dp[i - 1][j - 1] + 1;
                     int insert = dp[i][j - 1] + 1;
                     int delete = dp[i - 1][j] + 1;
-                    dp[i][j] = Math.min(Math.min(swap, insert), delete);
+                    dp[i][j] = Math.min(Math.min(replace, insert), delete);
                 }
             }
         }
